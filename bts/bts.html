@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="bts.css">
+</head>
+
+<html>
+  <body>
+   <header>
+      <h1 id="title">Favorite BTS Group Member</h1>
+      <p class="tagline" id="description">Thank you for taking the time to help us find out who the most popular one is!</p>
+   </header>
+   <form id="survey-form">
+     <div><label id="name-label" for="name"><strong>Name:</strong></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+     </div>
+     <div><label id="email-label" for="email"><strong>Email:</strong></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>      </div>
+     <div><label id="number-label" for="number"><strong>Age:</strong></label>
+      <input type="number" id="number" name="age" min="10" max="99" placeholder="Age"><br><br>
+     </div>
+     <div><label for="education"><strong>Select your current level of maturity:</strong></label><br>
+        <select name="education" id="dropdown" required>
+          <option value="dropdown">Pre-Teen</option>
+          <option value="highschool">Teenager</option>
+          <option value="middleschool">Young Adult</option>
+          <option value="elementary">Adult</option>
+          <option value="somecollege">Middle Aged</option>
+          <option value="collegegrad">Mature</option>
+       </select>
+     </div>
+     <div>
+       <p><strong>Which group member of BTS is your favorite?</strong></p>
+        <label>
+          <input name="users-choice" value="RM" type="radio" checked>RM</label><br>
+          <input name="users-choice" value="Jin" type="radio" checked>Jin</label><br>
+          <input name="users-choice" value="Suga" type="radio" checked>Suga</label><br>
+          <input name="users-choice" value="J-Hope" type="radio" checked>J-Hope</label><br>
+          <input name="users-choice" value="Jimin" type="radio" checked>Jimin</label><br>
+          <input name="users-choice" value="V" type="radio" checked>V</label><br>
+          <input name="users-choice" value="Jungkook" type="radio" checked>Jungkook</label>
+         </label>
+      </div>
+     <div>
+      <p><strong>Who is your least favorite member of BTS?</strong></p>
+      <select id="least-liked" name="leastLike" required>
+        <option value="rm">RM</option>
+        <option value="jin">Jin</option>
+        <option value="suga">Suga</option>
+        <option value="jhope">J-Hope</option>
+        <option value="jimin">Jimin</option>
+        <option value="v">V</option>
+        <option value="jk">Jungkook</option>
+      </select>
+     </div>
+     <div>
+        <p><strong>What features do you like about your favorite BTS member?</strong><span>(Check all that apply)</span></p>
+        <label>
+          <input name="prefer" value="personality" type="checkbox">How he treats his fans
+        </label><br>
+       <label>
+          <input name="prefer" value="contribution" type="checkbox">Contributions to the group
+        </label><br>
+        <label>
+          <input name="prefer" value="hair" type="checkbox">Hair
+        </label><br>
+       <label>
+         <input name="prefer" value="face" type="checkbox">Face
+        </label><br>
+        <label>
+         <input name="prefer" value="dance" type="checkbox">Dance Style
+        </label><br>
+        <label>
+          <input name="prefer" value="style" type="checkbox">Clothing Style
+        </label><br>
+       <label>
+         <input name="prefer" value="humor" type="checkbox">Style of humor
+        </label><br>       
+     </div>
+     <div>
+        <p><strong>Please tell us your favorite song by the group BTS, and explain why:</strong></p>
+        <textarea id="comments" name="comment" placeholder="Type your answer here...."></textarea>
+      </div>
+     <div class="button">       
+       <a href="https://armybts.com/"<button type="submit" target="_blank" id="submit">Submit</button></a>
+     </div>
+    </form>
+  </body>
+</html>
